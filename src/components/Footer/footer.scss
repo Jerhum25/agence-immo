@@ -25,21 +25,25 @@
       }
     }
   }
-  .contact{
-    display: flex;flex-direction: column;gap: 10px;
-    h3{
-        font-weight: bold;font-size: 20px;
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h3 {
+      font-weight: bold;
+      font-size: 20px;
     }
-    p{
-      a{
+    p {
+      a {
         color: #000;
       }
     }
   }
 }
 
-@media screen and (max-width:575px){
-  .footerContainer{
-    flex-direction: column;gap: 20px;
+@media screen and (max-width: 575px) {
+  .footerContainer {
+    flex-direction: column;
+    gap: 20px;
   }
 }
