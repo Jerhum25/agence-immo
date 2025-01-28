@@ -1,0 +1,91 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  justify-content: space-between;
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    .user {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 2px;
+      border-radius: 25px;
+      background-color: lightgrey;
+      p {
+        padding: 10px;
+        border-radius: 20px;
+        transition: 0.2s ease-in-out;
+        &:hover:after {
+          width: 0;
+        }
+        &:hover {
+          background-color: #fff;
+          height: 100%;
+        }
+      }
+    }
+    p {
+      position: relative;
+      cursor: pointer;
+      &::first-letter {
+        text-transform: capitalize;
+      }
+      &:after {
+        transition: 0.2s ease-in-out;
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: #000;
+        bottom: -2px;
+        left: 0;
+      }
+      &:hover:after {
+        width: 100%;
+      }
+    }
+  }
+  .burgerMenu {
+    display: none;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headerContainer {
+    position: relative;
+    nav {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100svw;
+      height: 100svh;
+      background-color: lightgrey;
+      z-index: 10;
+      flex-direction: column;
+    }
+    .burgerMenu {
+      display: flex;
+    }
+    .visible {
+      display: flex;
+    }
+  }
+}

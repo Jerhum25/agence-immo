@@ -1,0 +1,40 @@
+.footerContainer {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  padding: 30px;
+  gap: 150px;
+  background-color: lightgrey;
+  margin-top: 50px;
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h3 {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    ul {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      li {
+        a {
+          color: #000;
+        }
+      }
+    }
+  }
+  .contact{
+    display: flex;flex-direction: column;gap: 10px;
+    h3{
+        font-weight: bold;font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width:575px){
+  .footerContainer{
+    flex-direction: column;gap: 20px;
+  }
+}

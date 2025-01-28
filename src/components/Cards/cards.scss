@@ -1,0 +1,16 @@
+.cardsContainer {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: auto;
+}
+
+
+@media screen and (max-width: 768px){
+  .cardsContainer{
+    width: 100%;
+  }
+}
+
